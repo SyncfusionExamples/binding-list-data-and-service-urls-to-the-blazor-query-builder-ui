@@ -1,0 +1,53 @@
+﻿@page "/"
+@using Syncfusion.Blazor.QueryBuilder
+
+
+    <SfQueryBuilder DataSource="@EmployeeDetails">
+        <QueryBuilderColumns>
+            <QueryBuilderColumn Field="EmployeeID" Label="Employee ID" Type="number"></QueryBuilderColumn>
+            <QueryBuilderColumn Field="FirstName" Label="First Name" Type="string"></QueryBuilderColumn>
+            <QueryBuilderColumn Field="HireDate" Label="Hire Date" Type="date"></QueryBuilderColumn>
+            <QueryBuilderColumn Field="Country" Label="Country" Type="string"></QueryBuilderColumn>
+            <QueryBuilderColumn Field="City" Label="City" Type="string"></QueryBuilderColumn>
+        </QueryBuilderColumns>
+        <QueryBuilderRule Condition="and" Rules="@employeeRules"></QueryBuilderRule>
+    </SfQueryBuilder>
+
+    @code {
+
+        List<RuleModel> employeeRules = new List<RuleModel> {
+                new RuleModel { Field = "EmployeeID", Operator = "notequal", Value = "1001" },
+                new RuleModel { Field = "Country", Operator = "equal", Value = "England" }
+            };
+
+        public class Employee
+        {
+            public string EmployeeID { get; set; }
+            public string FirstName { get; set; }
+            public string HireDate { get; set; }
+            public string Country { get; set; }
+            public string City { get; set; }
+        }
+
+        public IEnumerable<Employee> EmployeeDetails = new List<Employee>
+        {
+            new Employee{ FirstName = "Martin", EmployeeID = "1001", Country = "England", City = "Manchester", HireDate = "23/04/2014" },
+            new Employee{ FirstName = "Benjamin", EmployeeID = "1002", Country = "England", City = "Birmingham", HireDate = "19/06/2014" },
+            new Employee{ FirstName = "Stuart", EmployeeID = "1003", Country = "England", City = "London", HireDate = "04/07/2014"},
+            new Employee{ FirstName = "Ben", EmployeeID = "1004", Country = "USA", City = "California", HireDate = "15/08/2014" },
+            new Employee{ FirstName = "Joseph", EmployeeID = "1005", Country = "Spain", City = "Madrid", HireDate = "29/08/2014" }
+        };
+    }
+@*@using Syncfusion.Blazor.QueryBuilder
+@using Syncfusion.Blazor.Data
+
+<SfQueryBuilder>
+    <QueryBuilderColumns>
+        <QueryBuilderColumn Field="EmployeeID" Label="Employee ID" Type="number"></QueryBuilderColumn>
+        <QueryBuilderColumn Field="FirstName" Label="First Name" Type="string"></QueryBuilderColumn>
+        <QueryBuilderColumn Field="HireDate" Label="Hire Date" Type="date" Format="MM/dd/yyyy"></QueryBuilderColumn>
+        <QueryBuilderColumn Field="Country" Label="Country" Type="string"></QueryBuilderColumn>
+        <QueryBuilderColumn Field="City" Label="City" Type="string"></QueryBuilderColumn>
+    </QueryBuilderColumns>
+    <SfDataManager Url="https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Employees" Adaptor="Syncfusion.Blazor.Adaptors.ODataAdaptor" CrossDomain="true"></SfDataManager>
+</SfQueryBuilder>*@
