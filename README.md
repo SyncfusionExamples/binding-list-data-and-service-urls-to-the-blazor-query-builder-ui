@@ -4,7 +4,8 @@ A quick-start project that helps you to bind list data and service URLs to a Syn
 
 Watch the video now: Coming soon...
 
-Documentation: https://blazor.syncfusion.com/documentation/query-builder/data-binding 
+Documentation: https://blazor.syncfusion.com/documentation/query-builder/data-binding
+
 Online example: https://blazor.syncfusion.com/demos/query-builder/default-functionalities
 
 ## Project prerequisites
