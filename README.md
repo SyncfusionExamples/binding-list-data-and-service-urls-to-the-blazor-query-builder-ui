@@ -1,22 +1,29 @@
 # Binding List Data and Service URLs to the Blazor Query Builder UI
 
-This sample explains about how to bind local list data and service URLs from a remote server to the Syncfusion Blazor Query Builder UI in Blazor WebAssembly application.
-
-**Documentation**: https://blazor.syncfusion.com/documentation/query-builder/data-binding
-
-**Online example**: https://blazor.syncfusion.com/demos/query-builder/default-functionalities
+This sample explains about how to bind local list data and service URLs from a remote server to the Syncfusion [Blazor Query Builder](https://www.syncfusion.com/blazor-components/blazor-query-builder) UI in Blazor WebAssembly application.
 
 ## Prerequisites
 
-* Visual Studio 2022
+* [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or later
+* [Visual Studio Code](https://code.visualstudio.com/)
 
 ## How to run the project
 
-* Checkout this project to a location in your disk.
-* Open the solution file using the Visual Studio 2022.
-* Restore the NuGet packages by rebuilding the solution.
-* Run the project.
+1. Clone or download this repository to a location in your system.
+2. Open the solution file using the Visual Studio or Visual Studio code.
+3. Restore the NuGet packages by rebuilding the solution or run `dotnet restore`.
+4. Build the project to ensure there are no compilation errors.
+5. Run the project.
 
-## Further help
+Optional CLI Commands:
 
-To get more help, check the [ASP.NET Core Blazor documentation](https://docs.microsoft.com/en-us/aspnet/core/blazor).
+```powershell
+dotnet restore
+dotnet build
+```
+
+## References
+
+**Documentation**: https://blazor.syncfusion.com/documentation/query-builder/data-binding
+
+**Online examples**: https://blazor.syncfusion.com/demos/query-builder/default-functionalities?theme=fluent2
