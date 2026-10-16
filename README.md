@@ -59,9 +59,6 @@ dotnet run
 
 6. Open the local URL displayed in the terminal and verify Query Builder functionality.
 
-## Project Structure
-
-`Client/Pages/Index.razor` — hosts the Syncfusion Query Builder implementation and demonstrates local and remote data-binding scenarios. [VERIFY: exact file content]
 
 ## Support and Feedback
 
