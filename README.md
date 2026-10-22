@@ -8,13 +8,13 @@ This sample explains about how to bind local list data and service URLs from a r
 
 ## Prerequisites
 
-* Visual Studio 2022
+* Visual Studio 2022 (or later) with the **.NET 10 SDK**
 
 ## How to run the project
 
 * Checkout this project to a location in your disk.
-* Open the solution file using the Visual Studio 2022.
-* Restore the NuGet packages by rebuilding the solution.
+* Open the project (`BindingListDataSample.csproj`) using Visual Studio 2022 or later with the .NET 10 SDK installed.
+* Restore the NuGet packages by rebuilding the project.
 * Run the project.
 
 ## Further help
